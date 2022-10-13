@@ -1,0 +1,15 @@
+.top {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.movie-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}

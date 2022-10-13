@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 40px;
+    color: white;
+}
+
+.container img {
+    padding: 20px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.46);
+}
+
+.container h3 {
+    margin-top: 20px;
+    font-size: 27px;
+}
+
+.info {
+    margin-top: 20px;
+    width: 440px;
+    
+}
+
+.info svg {
+    margin-right: 3px;
+    font-size: 27px;
+}
+
+.Description {
+    margin-bottom: 7rem;
+    letter-spacing: 1.2px;
+}
+
+.info p {
+    margin-top: 4px;
+}
