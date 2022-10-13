@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-import Movie from "../pages/Movie"
 
 import "./MoviesCard.css"
 

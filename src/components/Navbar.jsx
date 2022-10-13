@@ -1,5 +1,5 @@
-import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
 
 import { GiFilmProjector } from "react-icons/gi"
 import { AiOutlineSearch } from "react-icons/ai"
@@ -15,11 +15,11 @@ const Navbar = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (!searchValue)
+        if (!searchValue) return
 
-            navigate(`search?q=${searchValue}`) // redirect
-        console.log(searchValue)
+        navigate(`search?q=${searchValue}`) // redirect
         setSearchValue("")
+        console.log(searchValue)
     }
 
     return (
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <input type="text" placeholder="Busque por um filme" onChange={(e) => setSearchValue(e.target.value)} value={searchValue} />
                     <button className="btn-search" type="submit"><AiOutlineSearch /></button>
                 </form>
-                <Link><BsList className="list" /></Link>
+                <Link><BsList className="list"/></Link>
             </div>
         </nav>
     )
